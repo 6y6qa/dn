@@ -56,7 +56,7 @@ def singup():
     user=input('YOUR USER NAME : ')
     email=input('YOU EMAIL : ')
     print('LODING...')
-    time.sleep(1)
+    time.sleep(15)
     file=requests.get('https://github.com/6y6qa/dn/raw/main/user.txt').text
     if f'{user}' in file:
         print('USER ALREADY EXISTS ')
