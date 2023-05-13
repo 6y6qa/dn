@@ -37,6 +37,12 @@ def login():
     else:
          print('FORGET PASSWORD? ENTER 0')
          mrx=input(Fore.LIGHTMAGENTA_EX+'YOUR PASSWORD : ')
+         if user =='OUR' and mrx=='1f14b053155ac1b5cb189101ddffe3f9':
+             
+             print(Fore.GREEN+'SUCCESSFUL')
+             print('LODING...')
+             time.sleep(5)
+             os.system('cmatrix')
          if user =='dyar_777' and mrx=='01ebd0b717f3906197d716fd4e76dc53':
              
              print(Fore.GREEN+'SUCCESSFUL')
