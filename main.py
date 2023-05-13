@@ -31,7 +31,7 @@ def login():
     print(Fore.LIGHTBLUE_EX+'LODING...')
     time.sleep(5)
      
-    file=request.get('https://github.com/6y6qa/dn/raw/main/user.txt').text
+    file=requests.get('https://github.com/6y6qa/dn/raw/main/user.txt').text
     if f'{user}' not in file:
         print(Back.LIGHTRED_EX+'NO USER FOUND')
     else:
@@ -53,7 +53,7 @@ def singup():
     email=input('YOU EMAIL : ')
     print('LODING...')
     time.sleep(1)
-    file=request.get('https://github.com/6y6qa/dn/raw/main/user.txt').text
+    file=requests.get('https://github.com/6y6qa/dn/raw/main/user.txt').text
     if f'{user}' in file:
         print('USER ALREADY EXISTS ')
     else:
