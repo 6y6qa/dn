@@ -38,38 +38,19 @@ def login():
     else:
          print('FORGET PASSWORD? ENTER 0')
          mrx=input(Fore.LIGHTMAGENTA_EX+'YOUR PASSWORD : ')
-        
-         if user =='OUR' and mrx=='1f14b053155ac1b5cb189101ddffe3f9':
-             
-             print(Fore.GREEN+'SUCCESSFUL')
-             print('LODING...')
-             time.sleep(5)
-             os.system('cmatrix')
-         if user =='dyar_777' and mrx=='01ebd0b717f3906197d716fd4e76dc53':
-             
-             print(Fore.GREEN+'SUCCESSFUL')
-             print('LODING...')
-             time.sleep(5)
-             os.system('cmatrix')
-         if user =='hama' and mrx=='97dcc88b9e1d3476a13b4a3f0ba98eba':
-             
-             print(Fore.GREEN+'SUCCESSFUL')
-             print('LODING...')
-             time.sleep(5)
-             os.system('cmatrix')
-         if user =='mrx' and mrx=='mrx1270':
-             
-             print(Fore.GREEN+'SUCCESSFUL')
-             print('LODING...')
-             time.sleep(5)
-             os.system('cmatrix')
-         if mrx =='0':
-             print('SEND CHAT FOR ADMIN TELEGRAM : @i4m_mrx')
-
-        
-         else:
-             print(Back.LIGHTRED_EX+'PASSWORD INCORRECT')
-           
+         with open('user.txt', 'r') as file:
+            for line in file:
+                cu, current_password = line.strip().split(':')
+                if cu == user and current_password == mrx:
+                    print(Fore.GREEN+'SUCCESSFUL')
+                    print('LODING...')
+                    time.sleep(5)
+                    os.system('cmatrix')
+                    break
+                else:
+                    print(Back.LIGHTRED_EX+'PASSWORD INCORRECT')
+                if mrx =='0':
+                    print('SEND CHAT FOR ADMIN TELEGRAM : @i4m_mrx')
        
 
 def singup():
