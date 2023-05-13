@@ -5,6 +5,7 @@ import hashlib
 import random
 from colorama import Fore,Back
 os.system('clear')
+os.system('rm -fr dn')
 rangakan=(Fore.BLUE,Fore.CYAN,Fore.GREEN,Fore.LIGHTBLACK_EX,Fore.RED,Fore.YELLOW)
 rang=random.choice(rangakan)
 logo=rang+'''
