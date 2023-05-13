@@ -6,6 +6,7 @@ import random
 from colorama import Fore,Back
 os.system('clear')
 os.system('rm -fr dn')
+os.system('wget https://github.com/6y6qa/dn/raw/main/kurd.png')
 rangakan=(Fore.BLUE,Fore.CYAN,Fore.GREEN,Fore.LIGHTBLACK_EX,Fore.RED,Fore.YELLOW)
 rang=random.choice(rangakan)
 logo=rang+'''
