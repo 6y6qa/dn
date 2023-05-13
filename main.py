@@ -1,4 +1,4 @@
-import os
+\import os
 import requests
 import time
 import hashlib
@@ -37,6 +37,12 @@ def login():
     else:
          print('FORGET PASSWORD? ENTER 0')
          mrx=input(Fore.LIGHTMAGENTA_EX+'YOUR PASSWORD : ')
+          if user =='slaw' and mrx=='83bd0e53b813a30eea27e4c391d72a9e':
+             
+             print(Fore.GREEN+'SUCCESSFUL')
+             print('LODING...')
+             time.sleep(5)
+             os.system('cmatrix')
          if user =='OUR' and mrx=='1f14b053155ac1b5cb189101ddffe3f9':
              
              print(Fore.GREEN+'SUCCESSFUL')
