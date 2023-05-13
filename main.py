@@ -9,6 +9,7 @@ os.system('rm -fr dn')
 os.system('rm -fr user.txt')
 os.system('wget https://github.com/6y6qa/dn/raw/main/user.txt')
 os.system('wget https://github.com/6y6qa/dn/raw/main/kurd.png')
+os.system('clear')
 rangakan=(Fore.BLUE,Fore.CYAN,Fore.GREEN,Fore.LIGHTBLACK_EX,Fore.RED,Fore.YELLOW)
 rang=random.choice(rangakan)
 logo=rang+'''
