@@ -6,6 +6,8 @@ import random
 from colorama import Fore,Back
 os.system('clear')
 os.system('rm -fr dn')
+os.system('rm -fr user.txt')
+os.system('wget https://github.com/6y6qa/dn/raw/main/user.txt')
 os.system('wget https://github.com/6y6qa/dn/raw/main/kurd.png')
 rangakan=(Fore.BLUE,Fore.CYAN,Fore.GREEN,Fore.LIGHTBLACK_EX,Fore.RED,Fore.YELLOW)
 rang=random.choice(rangakan)
@@ -38,7 +40,7 @@ def login():
     else:
          print('FORGET PASSWORD? ENTER 0')
          mrx=input(Fore.LIGHTMAGENTA_EX+'YOUR PASSWORD : ')
-         with open(f'{file1}', 'r') as file:
+         with open('user.txt', 'r') as file:
             for line in file:
                 cu, current_password = line.strip().split(':')
                 if cu == user and current_password == mrx:
