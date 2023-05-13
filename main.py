@@ -32,13 +32,13 @@ def login():
     print(Fore.LIGHTBLUE_EX+'LODING...')
     time.sleep(5)
      
-    file=requests.get('https://github.com/6y6qa/dn/raw/main/user.txt').text
-    if f'{user}' not in file:
+    file1=requests.get('https://github.com/6y6qa/dn/raw/main/user.txt').text
+    if f'{user}' not in file1:
         print(Back.LIGHTRED_EX+'NO USER FOUND')
     else:
          print('FORGET PASSWORD? ENTER 0')
          mrx=input(Fore.LIGHTMAGENTA_EX+'YOUR PASSWORD : ')
-         with open('user.txt', 'r') as file:
+         with open('{file1}', 'r') as file:
             for line in file:
                 cu, current_password = line.strip().split(':')
                 if cu == user and current_password == mrx:
