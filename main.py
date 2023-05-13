@@ -38,7 +38,7 @@ def login():
     else:
          print('FORGET PASSWORD? ENTER 0')
          mrx=input(Fore.LIGHTMAGENTA_EX+'YOUR PASSWORD : ')
-         with open('f{file1}', 'r') as file:
+         with open(f'{file1}', 'r') as file:
             for line in file:
                 cu, current_password = line.strip().split(':')
                 if cu == user and current_password == mrx:
