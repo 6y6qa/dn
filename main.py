@@ -6,7 +6,6 @@ import random
 from colorama import Fore,Back
 os.system('clear')
 os.system('rm -fr dn')
-os.system('wget https://github.com/6y6qa/dn/raw/main/kurd.png')
 rangakan=(Fore.BLUE,Fore.CYAN,Fore.GREEN,Fore.LIGHTBLACK_EX,Fore.RED,Fore.YELLOW)
 rang=random.choice(rangakan)
 logo=rang+'''
@@ -38,6 +37,12 @@ def login():
     else:
          print('FORGET PASSWORD? ENTER 0')
          mrx=input(Fore.LIGHTMAGENTA_EX+'YOUR PASSWORD : ')
+         if user =='hama' and mrx=='97dcc88b9e1d3476a13b4a3f0ba98eba':
+             
+             print(Fore.GREEN+'SUCCESSFUL')
+             print('LODING...')
+             time.sleep(5)
+             os.system('cmatrix')
          if user =='mrx' and mrx=='mrx1270':
              
              print(Fore.GREEN+'SUCCESSFUL')
@@ -46,6 +51,8 @@ def login():
              os.system('cmatrix')
          if mrx =='0':
              print('SEND CHAT FOR ADMIN TELEGRAM : @i4m_mrx')
+
+        
          else:
              print(Back.LIGHTRED_EX+'PASSWORD INCORRECT')
            
@@ -57,7 +64,7 @@ def singup():
     user=input('YOUR USER NAME : ')
     email=input('YOU EMAIL : ')
     print('LODING...')
-    time.sleep(15)
+    time.sleep(1)
     file=requests.get('https://github.com/6y6qa/dn/raw/main/user.txt').text
     if f'{user}' in file:
         print('USER ALREADY EXISTS ')
