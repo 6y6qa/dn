@@ -38,12 +38,16 @@ def login():
          print('FORGET PASSWORD? ENTER 0')
          mrx=input(Fore.LIGHTMAGENTA_EX+'YOUR PASSWORD : ')
          if user =='mrx' and mrx=='mrx1270':
+             
              print(Fore.GREEN+'SUCCESSFUL')
              print('LODING...')
              time.sleep(5)
              os.system('cmatrix')
          if mrx =='0':
              print('SEND CHAT FOR ADMIN TELEGRAM : @i4m_mrx')
+         else:
+             print(Back.LIGHTRED_EX+'PASSWORD INCORRECT')
+           
        
 
 def singup():
